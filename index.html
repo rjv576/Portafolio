@@ -1,19 +1,165 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, 
-    maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0">
     <title>Portafolio de Ronald Juma</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,
-    400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/estilos.css">
 
 </head>
 
 <body>
-    <p>Hola Mundo</p>
+  
+  <header id="home">
+    <!--Menu de Navegacion-->
+      <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#aboutme">About</a>
+        <a href="#jobs">Trabajos</a>
+        <a href="#contact">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+      </div>
+        <div class="container">
+          <div class="container-text">
+            <div class="textos">
+              <h1 class="name">Ronald Juma</h1>
+              <h2 class="profession">Web Developer</h2>
+            </div>
+          </div>
+        </div>
+  </header>
+
+<section class="main">
+  <div class="container">
+    <section class="acerca-de">
+
+      <div class="foto">
+        <img src="img/ronald.png" width="115" height="115" alt="Ronald Juma">
+      </div>
+
+      <div class="texto">
+        <h3 id="aboutme" class="title">About Me</h3>
+        <p>Hello! I'm Ronald Juma, a <span class="bold">web developer</span> from the <span class="bold">city of San Juan, Puerto Rico. </span> I am passionate about technology and web development,
+          I love learning new things and constantly growing. I consider myself a proactive person,
+          responsible and committed to my work. I like to work as a team and contribute ideas for the growth of the company.</p>
+      </div>
+    
+    </section>
+
+  </div>
+    <section id="jobs" class="jobs">
+      <div class="container">
+        <h3 class="title">Trabajos</h3>
+      <div class="container-job">
+        <div class="job">
+          <div class="thumb">
+            <img src="img/trabajos/1.jpg" alt="Proyecto con ASG">
+          </div>
+          <div class="Description">
+            <p class="nombre">Propiedad Excedente</p>
+            <p class="category">Python - Django - HTML - javascript</p>
+          </div>
+        </div> 
+        <div class="job">
+          <div class="thumb">
+            <img src="img/trabajos/2.jpg" alt="Proyecto Portafolio">
+          </div>
+          <div class="Description">
+            <p class="nombre">Creacion de Portafolio</p>
+            <p class="category">HTML -CSS- javascript</p>
+          </div>
+        </div>
+        <div class="job">
+          <div class="thumb">
+            <img src="img/trabajos/3.jpg" alt="Portafolio de Fotografia">
+          </div>
+          <div class="Description">
+            <p class="nombre">Taly Photos</p>
+            <p class="category">Python - Django - HTML - javascript</p>
+          </div>
+        </div>
+        <div class="job">
+          <div class="thumb">
+            <img src="img/trabajos/4.jpg" alt="Proyecto con ASG">
+          </div>
+          <div class="Description">
+            <p class="nombre">API Restful</p>
+            <p class="category">Python - Restful</p>
+          </div>
+        </div>
+        <div class="job">
+          <div class="thumb">
+            <img src="img/trabajos/5.jpg" alt="Proyecto con ASG">
+          </div>
+          <div class="Description">
+            <p class="nombre">Menu Raices</p>
+            <p class="category">Python - Django - HTML - javascript</p>
+          </div>
+        </div>
+        <div class="job">
+          <div class="thumb">
+            <img src="img/trabajos/6.jpg" alt="Proyecto con ASG">
+          </div>
+          <div class="Description">
+            <p class="nombre">Barber Client</p>
+            <p class="category">Python - Django - HTML - javascript - Boostrad</p>
+          </div>
+        </div>
+        <div class="job">
+          <div class="thumb">
+            <img src="img/trabajos/7.jpg" alt="Proyecto con ASG">
+          </div>
+          <div class="Description">
+            <p class="nombre">Market Place</p>
+            <p class="category">Python - Django - javascript - React</p>
+          </div>
+        </div>
+        <div class="job">
+          <div class="thumb">
+            <img src="img/trabajos/8.jpg" alt="Proyecto con ASG">
+          </div>
+            <div class="Description">
+              <p class="nombre">Spotify clone</p>
+              <p class="category">Python - Django - HTML - Java</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+      
+</section>
+<footer>
+  <section id="contact" class="contacto">
+    <div class="container">
+      <h3 class="title">Contact</h3>
+      <form class="formulario" action="">
+        <input type="text" name="name" placeholder="Name">
+        <input type="email" name="email" placeholder="Email">
+        <textarea name="message" placeholder="Message"></textarea>
+        <input class="botton" type="submit" value="Send">
+      </form>
+    </div>
+  </section>
+
+  <section id="redes-sociales" class="redes-sociales">
+    <div class="container">
+      <a href="#" class="Twitter"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#" class="Facebook"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#" class="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="#" class="Linkedin"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="#" class="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" class="Youtube"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+  </section>
+</footer>
+
 </body>
+<script src="https://kit.fontawesome.com/a6469d7e42.js" crossorigin="anonymous"></script>
+<script src="js/nav.js"></script>
 </html>
